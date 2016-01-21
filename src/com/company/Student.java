@@ -111,18 +111,17 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "id=" + id +
-                ", First name : '" + first_name + '\'' +
-                ", Second name: '" + second_name + '\'' +
-                ", Patronymic: '" + patronymic + '\'' +
-                ", date of birth: " + date +
-                ", address: '" + address + '\'' +
-                ", telephone: '" + telephone + '\'' +
-                ", faculty: '" + faculty + '\'' +
-                ", curse: " + curse +
-                ", group: " + group +
-                '}';
+        return "Student:" + "\n" +
+                " id=" + id + "\n" +
+                " First name : " + first_name + "\n" +
+                " Second name: " + second_name + "\n" +
+                " Patronymic: " + patronymic + "\n" +
+                " date of birth: " +date.get(Calendar.DAY_OF_MONTH)+"." + date.get(Calendar.MONTH) + "." + date.get(Calendar.YEAR) + "\n" +
+                " address: " + address + "\n" +
+                " telephone: " + telephone + "\n" +
+                " faculty: " + faculty + "\n" +
+                " curse: " + curse + "\n" +
+                " group: " + group + "\n";
     }
 
 }
